@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>CAD To Other Money Converter App</title>    
+<link rel="stylesheet" href="styles.css">
+</head>  
+<body >
+<a href="index.html">Home</a>
+
+<h1>CAD To $$$</h1>
+<div class = "calc">
+<p>$1CAD = $1.21NZD</p>
+<p>$1CAD = $0.75USD</p>
+
+  
+<p>
+    <label>CAD$</label>
+    <input id="inputPunds" type="number" placeholder="CAD" oninput="wightConverter(this.value)" onchange="weightConverter(this.value)">
+   
+    
+    
+</p>
+<p>NZD: <span id="NZD"></span></p> 
+<p>USD: <span id="USD"></span></p> 
+        
+</div>     
+        
+<script>
+function weightConverter(valNum){
+    document.getElementById("NZD").innerHTML=valNum*1.21
+    document.getElementById("USD").innerHTML=valNum*0.75
+    
+    }
+</script>        
+</body>
+</html>
